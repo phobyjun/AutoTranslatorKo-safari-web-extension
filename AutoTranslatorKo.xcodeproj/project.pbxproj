@@ -14,6 +14,16 @@
 		A9DB58E7279441C1006A62C0 /* AutoTranslatorKoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB58E6279441C1006A62C0 /* AutoTranslatorKoTests.swift */; };
 		A9DB58F1279441C1006A62C0 /* AutoTranslatorKoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB58F0279441C1006A62C0 /* AutoTranslatorKoUITests.swift */; };
 		A9DB58F3279441C1006A62C0 /* AutoTranslatorKoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB58F2279441C1006A62C0 /* AutoTranslatorKoUITestsLaunchTests.swift */; };
+		A9DB590627944212006A62C0 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DB590527944212006A62C0 /* SafariWebExtensionHandler.swift */; };
+		A9DB590927944212006A62C0 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = A9DB590827944212006A62C0 /* _locales */; };
+		A9DB590B27944212006A62C0 /* images in Resources */ = {isa = PBXBuildFile; fileRef = A9DB590A27944212006A62C0 /* images */; };
+		A9DB590D27944212006A62C0 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = A9DB590C27944212006A62C0 /* manifest.json */; };
+		A9DB590F27944212006A62C0 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = A9DB590E27944212006A62C0 /* background.js */; };
+		A9DB591127944212006A62C0 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = A9DB591027944212006A62C0 /* content.js */; };
+		A9DB591327944212006A62C0 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = A9DB591227944212006A62C0 /* popup.html */; };
+		A9DB591527944212006A62C0 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = A9DB591427944212006A62C0 /* popup.css */; };
+		A9DB591727944212006A62C0 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = A9DB591627944212006A62C0 /* popup.js */; };
+		A9DB591C27944212006A62C0 /* translator.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9DB590327944212006A62C0 /* translator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +41,28 @@
 			remoteGlobalIDString = A9DB58D0279441C0006A62C0;
 			remoteInfo = AutoTranslatorKo;
 		};
+		A9DB591A27944212006A62C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DB58C9279441C0006A62C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DB590227944212006A62C0;
+			remoteInfo = translator;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9DB592027944212006A62C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9DB591C27944212006A62C0 /* translator.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A9DB58D1279441C0006A62C0 /* AutoTranslatorKo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoTranslatorKo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +76,18 @@
 		A9DB58EC279441C1006A62C0 /* AutoTranslatorKoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoTranslatorKoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9DB58F0279441C1006A62C0 /* AutoTranslatorKoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoTranslatorKoUITests.swift; sourceTree = "<group>"; };
 		A9DB58F2279441C1006A62C0 /* AutoTranslatorKoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoTranslatorKoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9DB590327944212006A62C0 /* translator.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = translator.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DB590527944212006A62C0 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		A9DB590827944212006A62C0 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		A9DB590A27944212006A62C0 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		A9DB590C27944212006A62C0 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		A9DB590E27944212006A62C0 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		A9DB591027944212006A62C0 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		A9DB591227944212006A62C0 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		A9DB591427944212006A62C0 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		A9DB591627944212006A62C0 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		A9DB591827944212006A62C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DB591927944212006A62C0 /* translator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = translator.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +112,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9DB590027944212006A62C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +128,7 @@
 				A9DB58D3279441C0006A62C0 /* AutoTranslatorKo */,
 				A9DB58E5279441C1006A62C0 /* AutoTranslatorKoTests */,
 				A9DB58EF279441C1006A62C0 /* AutoTranslatorKoUITests */,
+				A9DB590427944212006A62C0 /* translator */,
 				A9DB58D2279441C0006A62C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +139,7 @@
 				A9DB58D1279441C0006A62C0 /* AutoTranslatorKo.app */,
 				A9DB58E2279441C1006A62C0 /* AutoTranslatorKoTests.xctest */,
 				A9DB58EC279441C1006A62C0 /* AutoTranslatorKoUITests.xctest */,
+				A9DB590327944212006A62C0 /* translator.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +181,32 @@
 			path = AutoTranslatorKoUITests;
 			sourceTree = "<group>";
 		};
+		A9DB590427944212006A62C0 /* translator */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB590527944212006A62C0 /* SafariWebExtensionHandler.swift */,
+				A9DB591827944212006A62C0 /* Info.plist */,
+				A9DB591927944212006A62C0 /* translator.entitlements */,
+				A9DB590727944212006A62C0 /* Resources */,
+			);
+			path = translator;
+			sourceTree = "<group>";
+		};
+		A9DB590727944212006A62C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9DB590827944212006A62C0 /* _locales */,
+				A9DB590A27944212006A62C0 /* images */,
+				A9DB590C27944212006A62C0 /* manifest.json */,
+				A9DB590E27944212006A62C0 /* background.js */,
+				A9DB591027944212006A62C0 /* content.js */,
+				A9DB591227944212006A62C0 /* popup.html */,
+				A9DB591427944212006A62C0 /* popup.css */,
+				A9DB591627944212006A62C0 /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +217,12 @@
 				A9DB58CD279441C0006A62C0 /* Sources */,
 				A9DB58CE279441C0006A62C0 /* Frameworks */,
 				A9DB58CF279441C0006A62C0 /* Resources */,
+				A9DB592027944212006A62C0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A9DB591B27944212006A62C0 /* PBXTargetDependency */,
 			);
 			name = AutoTranslatorKo;
 			productName = AutoTranslatorKo;
@@ -185,6 +265,23 @@
 			productReference = A9DB58EC279441C1006A62C0 /* AutoTranslatorKoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A9DB590227944212006A62C0 /* translator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DB591D27944212006A62C0 /* Build configuration list for PBXNativeTarget "translator" */;
+			buildPhases = (
+				A9DB58FF27944212006A62C0 /* Sources */,
+				A9DB590027944212006A62C0 /* Frameworks */,
+				A9DB590127944212006A62C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = translator;
+			productName = translator;
+			productReference = A9DB590327944212006A62C0 /* translator.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,6 +303,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 						TestTargetID = A9DB58D0279441C0006A62C0;
 					};
+					A9DB590227944212006A62C0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = A9DB58CC279441C0006A62C0 /* Build configuration list for PBXProject "AutoTranslatorKo" */;
@@ -224,6 +324,7 @@
 				A9DB58D0279441C0006A62C0 /* AutoTranslatorKo */,
 				A9DB58E1279441C1006A62C0 /* AutoTranslatorKoTests */,
 				A9DB58EB279441C1006A62C0 /* AutoTranslatorKoUITests */,
+				A9DB590227944212006A62C0 /* translator */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +350,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DB590127944212006A62C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DB590F27944212006A62C0 /* background.js in Resources */,
+				A9DB591527944212006A62C0 /* popup.css in Resources */,
+				A9DB591327944212006A62C0 /* popup.html in Resources */,
+				A9DB590B27944212006A62C0 /* images in Resources */,
+				A9DB590D27944212006A62C0 /* manifest.json in Resources */,
+				A9DB590927944212006A62C0 /* _locales in Resources */,
+				A9DB591127944212006A62C0 /* content.js in Resources */,
+				A9DB591727944212006A62C0 /* popup.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +397,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A9DB58FF27944212006A62C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DB590627944212006A62C0 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +417,11 @@
 			isa = PBXTargetDependency;
 			target = A9DB58D0279441C0006A62C0 /* AutoTranslatorKo */;
 			targetProxy = A9DB58ED279441C1006A62C0 /* PBXContainerItemProxy */;
+		};
+		A9DB591B27944212006A62C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DB590227944212006A62C0 /* translator */;
+			targetProxy = A9DB591A27944212006A62C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +544,7 @@
 		A9DB58F7279441C1006A62C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AutoTranslatorKo/AutoTranslatorKo.entitlements;
@@ -440,6 +570,7 @@
 		A9DB58F8279441C1006A62C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = AutoTranslatorKo/AutoTranslatorKo.entitlements;
@@ -530,6 +661,66 @@
 			};
 			name = Release;
 		};
+		A9DB591E27944212006A62C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = translator/translator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = translator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = translator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = junseok.AutoTranslatorKo.translator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A9DB591F27944212006A62C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = translator/translator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = translator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = translator;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = junseok.AutoTranslatorKo.translator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -565,6 +756,15 @@
 			buildConfigurations = (
 				A9DB58FD279441C1006A62C0 /* Debug */,
 				A9DB58FE279441C1006A62C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DB591D27944212006A62C0 /* Build configuration list for PBXNativeTarget "translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DB591E27944212006A62C0 /* Debug */,
+				A9DB591F27944212006A62C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
